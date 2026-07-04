@@ -1,8 +1,9 @@
 package com.tutorial.shape.calculator;
 
+import com.tutorial.shape.Drawable;
 import com.tutorial.shape.Shape;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
     private final double width;
     private final double height;
 
@@ -22,5 +23,10 @@ public class Rectangle extends Shape {
     @Override
     public double perimeter() {
         return 2 * (width + height);
+    }
+
+    @Override
+    public String drawAscii() {
+        return "Ascii Shape Of Rectangle";
     }
 }

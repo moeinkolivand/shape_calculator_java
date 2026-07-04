@@ -1,8 +1,9 @@
 package com.tutorial.shape.calculator;
 
+import com.tutorial.shape.Drawable;
 import com.tutorial.shape.Shape;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private final double radius;
 
     public Circle(double radius) {
@@ -20,5 +21,10 @@ public class Circle extends Shape {
     @Override
     public double perimeter() {
         return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public String drawAscii() {
+        return "Ascii Shape Of Circle";
     }
 }
