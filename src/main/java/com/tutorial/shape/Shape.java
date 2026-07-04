@@ -8,6 +8,6 @@ public abstract class Shape {
     public abstract double perimeter();
 
     public void describe() {
-        System.out.println("The Shape Name Is " + name + "The Area Is " + area() + "And The Perimeter Is " + perimeter());
+        System.out.println("The Shape Name Is " + getClass().getSimpleName() + " The Area Is " + area() + " And The Perimeter Is " + perimeter());
     }
 }
