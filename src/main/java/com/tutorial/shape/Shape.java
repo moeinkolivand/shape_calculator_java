@@ -2,8 +2,6 @@ package com.tutorial.shape;
 
 
 public abstract class Shape {
-    protected String name;
-
     public abstract double area();
     public abstract double perimeter();
 
